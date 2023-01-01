@@ -1,0 +1,399 @@
+/** @format */
+.chartsContainer {
+	flex: 1;
+	margin-top: -40px;
+}
+.priceInfoContainer {
+	background: white;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+.topRow {
+	display: flex;
+	align-items: baseline;
+	gap: 15px;
+}
+.percentChange {
+	color: #a50e0e;
+	background: #fce8e6;
+	border-radius: 8px;
+	border: none;
+	padding: 10px;
+	letter-spacing: 0.00625em;
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.5rem;
+	/* width: max-content; */
+}
+.percentArrow {
+	color: #a50e0e;
+}
+.percentToday {
+	color: #a50e0e;
+	font-weight: bolder;
+}
+.rowMiddle {
+	display: flex;
+	gap: 20px;
+}
+
+.chartAndInfoContainer {
+	display: flex;
+	justify-content: space-between;
+}
+.chartOnLeft {
+	flex: 3;
+	border-radius: 10px;
+	background: white;
+	margin: 10px;
+	max-height: 700px;
+}
+.stockInfoOnRight {
+	flex: 1;
+}
+.generalInfoCard {
+	border-radius: 10px;
+	border: 1px #dadce0 solid;
+	margin-bottom: 16px;
+	padding: 16px 16px 0 16px;
+	box-sizing: border-box;
+	background: white;
+	margin: 5px;
+	margin-right: 15px;
+	max-height: 500px;
+	width: 290px;
+	margin-right: 20px;
+}
+.aboutCard {
+	border-radius: 10px;
+	border: 1px #dadce0 solid;
+	margin-bottom: 16px;
+	padding: 16px 16px 0 16px;
+	box-sizing: border-box;
+	background: white;
+	margin: 5px;
+	margin-right: 15px;
+	max-height: 500px;
+	overflow: scroll;
+}
+.aboutCard {
+	-ms-overflow-style: none; /* Internet Explorer 10+ */
+	scrollbar-width: none; /* Firefox */
+}
+.aboutCard::-webkit-scrollbar {
+	display: none; /* Safari and Chrome */
+}
+.cardTitle {
+	position: sticky;
+}
+.containsStockInfo {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px #dadce0 solid;
+	padding: 2px;
+	margin: 5px;
+}
+.arrowContainer {
+	background: rgba(243, 0, 0, 0.616);
+	border-radius: 50%;
+	margin: 5px;
+}
+.arrowDownWard {
+	color: white;
+	text-align: center;
+	padding: 4px;
+}
+.amountChanges {
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+	padding: 5px;
+	color: white;
+	font-weight: 600;
+	height: 100%;
+}
+
+.stockList {
+	height: 100%;
+
+	display: flex;
+	margin: 20px;
+	margin-top: 290px;
+}
+.stockListLeft {
+	width: 890px;
+	margin: 20px;
+	margin-top: -300px;
+	margin-left: -1px;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+	.chartsContainer {
+		flex: 1;
+		margin-top: -20px;
+	}
+	.priceInfoContainer {
+		background: white;
+		margin-top: 5px;
+		margin-left: 5px;
+	}
+	.topRow {
+		display: flex;
+		align-items: baseline;
+		gap: 15px;
+	}
+	.percentChange {
+		color: #a50e0e;
+		background: #fce8e6;
+		border-radius: 8px;
+		border: none;
+		padding: 10px;
+		letter-spacing: 0.00625em;
+		font-size: 1rem;
+		font-weight: 500;
+		line-height: 1.5rem;
+	}
+	.percentArrow {
+		color: #a50e0e;
+	}
+	.percentToday {
+		color: #a50e0e;
+		font-weight: bolder;
+	}
+	.rowMiddle {
+		display: flex;
+		gap: 20px;
+	}
+
+	.chartAndInfoContainer {
+		display: block;
+		justify-content: space-between;
+		width: 750px;
+		margin-left: -8px;
+	}
+	.chartOnLeft {
+		flex: 3;
+		border-radius: 10px;
+		background: white;
+		margin-right: 20px;
+		width: 750px;
+		max-height: 800px;
+	}
+	.stockInfoOnRight {
+		flex: 1;
+	}
+
+	.aboutCard {
+		border-radius: 10px;
+		border: 1px #dadce0 solid;
+		margin-bottom: 16px;
+		padding: 16px 16px 0 16px;
+		box-sizing: border-box;
+		background: white;
+		margin: 5px;
+		margin-right: 15px;
+		max-height: 500px;
+		overflow: scroll;
+		margin-bottom: 320px;
+		width: 700px;
+	}
+	.aboutCard {
+		-ms-overflow-style: none; /* Internet Explorer 10+ */
+		scrollbar-width: none; /* Firefox */
+	}
+	.aboutCard::-webkit-scrollbar {
+		display: none; /* Safari and Chrome */
+	}
+	.generalInfoCard {
+		border-radius: 10px;
+		border: 1px #dadce0 solid;
+		margin-bottom: 16px;
+		padding: 16px 16px 0 16px;
+		box-sizing: border-box;
+		background: white;
+		margin-right: 15px;
+		margin-top: -300px;
+		margin-bottom: 300px;
+		max-height: 500px;
+		width: 700px;
+		margin-right: 20px;
+	}
+	.cardTitle {
+		position: sticky;
+	}
+	.containsStockInfo {
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 1px #dadce0 solid;
+		padding: 2px;
+		margin: 5px;
+	}
+	.arrowContainer {
+		background: rgba(243, 0, 0, 0.616);
+		border-radius: 50%;
+		margin: 5px;
+	}
+	.arrowDownWard {
+		color: white;
+		text-align: center;
+		padding: 4px;
+	}
+	.amountChanges {
+		border: none;
+		border-radius: 5px;
+		text-align: center;
+		padding: 5px;
+		color: white;
+		font-weight: 600;
+		height: 100%;
+	}
+
+	.stockList {
+		height: 100%;
+	}
+
+	.stockList {
+		display: flex;
+		margin: 10px;
+	}
+	.stockListLeft {
+		width: 340px;
+		margin: 20px;
+		margin-top: -300px;
+		margin-left: -1px;
+	}
+}
+/* Phone */
+@media (max-width: 700px) {
+	.chartsContainer {
+		flex: 1;
+		margin-top: -20px;
+	}
+	.priceInfoContainer {
+		background: white;
+		margin-top: 5px;
+		margin-left: 5px;
+	}
+	.topRow {
+		display: flex;
+		align-items: baseline;
+		gap: 15px;
+	}
+	.percentChange {
+		color: #a50e0e;
+		background: #fce8e6;
+		border-radius: 8px;
+		border: none;
+		padding: 10px;
+		letter-spacing: 0.00625em;
+		font-size: 1rem;
+		font-weight: 500;
+		line-height: 1.5rem;
+	}
+	.percentArrow {
+		color: #a50e0e;
+	}
+	.percentToday {
+		color: #a50e0e;
+		font-weight: bolder;
+	}
+	.rowMiddle {
+		display: flex;
+		gap: 20px;
+	}
+
+	.chartAndInfoContainer {
+		display: block;
+		justify-content: space-between;
+		width: 360px;
+		margin-left: -20px;
+	}
+	.chartOnLeft {
+		flex: 3;
+		border-radius: 10px;
+		background: white;
+		margin-right: 10px;
+		width: 360px;
+		max-height: 700px;
+	}
+	.stockInfoOnRight {
+		flex: 1;
+	}
+	.generalInfoCard {
+		border-radius: 10px;
+		border: 1px #dadce0 solid;
+		margin-top: -300px;
+		margin-bottom: 300px;
+		padding: 16px 16px 0 16px;
+		box-sizing: border-box;
+		background: white;
+		margin-left: 12px;
+		max-height: 500px;
+		width: 360px;
+		margin-right: 20px;
+	}
+	.aboutCard {
+		border-radius: 10px;
+		border: 1px #dadce0 solid;
+		margin-bottom: 16px;
+		padding: 16px 16px 0 16px;
+		box-sizing: border-box;
+		background: white;
+		margin: 5px;
+		margin-left: 12px;
+		max-height: 500px;
+		overflow: scroll;
+		margin-bottom: 320px;
+		width: 360px;
+	}
+	.aboutCard {
+		-ms-overflow-style: none; /* Internet Explorer 10+ */
+		scrollbar-width: none; /* Firefox */
+	}
+	.aboutCard::-webkit-scrollbar {
+		display: none; /* Safari and Chrome */
+	}
+	.cardTitle {
+		position: sticky;
+	}
+	.containsStockInfo {
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 1px #dadce0 solid;
+		padding: 2px;
+		margin: 5px;
+	}
+	.arrowContainer {
+		background: rgba(243, 0, 0, 0.616);
+		border-radius: 50%;
+		margin: 5px;
+	}
+	.arrowDownWard {
+		color: white;
+		text-align: center;
+		padding: 4px;
+	}
+	.amountChanges {
+		border: none;
+		border-radius: 5px;
+		text-align: center;
+		padding: 5px;
+		color: white;
+		font-weight: 600;
+		height: 100%;
+	}
+
+	.stockList {
+		height: 100%;
+	}
+
+	.stockList {
+		display: flex;
+		margin: 10px;
+	}
+	.stockListLeft {
+		width: 340px;
+		margin: 20px;
+		margin-top: -300px;
+		margin-left: -1px;
+	}
+}

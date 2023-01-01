@@ -1,0 +1,34 @@
+/** @format */
+
+.stocks {
+	margin-top: 80px;
+	min-width: 100%;
+	flex: 4;
+	background-color: #fafbfc;
+	height: 100%;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+	.stocks {
+		margin-top: 80px;
+		min-width: 100%;
+		flex: 4;
+		background-color: #fafbfc;
+		height: 100%;
+	}
+}
+/* Phone */
+@media (max-width: 700px) {
+	.stocks {
+		margin-top: 80px;
+		min-width: 100%;
+		flex: 4;
+		background-color: #fafbfc;
+		height: 100%;
+		margin-left: -65px;
+	}
+	.alert {
+		margin: 5px;
+		margin-left: 40px;
+	}
+}

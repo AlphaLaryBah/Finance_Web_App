@@ -1,0 +1,115 @@
+/** @format */
+
+.topbar {
+	min-width: 100%;
+
+	width: 100vh;
+	height: 65px;
+
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	z-index: 998;
+	border: none;
+	box-shadow: 0 0 16px rgb(0 0 0 / 28%);
+	overflow-x: hidden;
+}
+
+.hamburgerIcon {
+	margin-bottom: 2px;
+}
+.hamburgerIcon.active {
+	color: green;
+}
+.logoCash {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-left: 10px;
+}
+.topbarWrapper {
+	height: 100%;
+	padding: 0px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	font-weight: bold;
+	font-size: 30px;
+	color: rgb(64, 154, 124);
+	/* color: green; */
+	cursor: pointer;
+	/* margin: 5px; */
+}
+
+.topRight {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.topbarIconContainer {
+	position: relative;
+	cursor: pointer;
+	margin-right: 10px;
+	color: #555;
+}
+
+.topIconBadge {
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top: -5px;
+	right: 0px;
+	background-color: red;
+	color: white;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 10px;
+}
+
+.topAvatar {
+	width: 40px;
+	height: 42px;
+	border-radius: 50%;
+	cursor: pointer;
+	/* border: 1px solid black; */
+	margin: 4px;
+}
+
+/* Tablets */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+}
+/* Phone */
+@media (max-width: 700px) {
+	.topbar {
+		min-width: 100%;
+
+		width: 100vh;
+		height: 55px;
+
+		background-color: #fff;
+		position: fixed;
+		top: 0;
+		z-index: 998;
+		border: none;
+		box-shadow: 0 0 16px rgb(0 0 0 / 28%);
+		overflow-x: hidden;
+	}
+	.hamburgerIcon {
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	.logo {
+		font-weight: bold;
+		font-size: 20px;
+		color: rgb(64, 154, 124);
+
+		/* color: green; */
+		cursor: pointer;
+	}
+}

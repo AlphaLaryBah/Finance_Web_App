@@ -1,0 +1,13 @@
+/** @format */
+
+.assetContainer {
+	display: block;
+	justify-content: center;
+	margin-top: 10px;
+	margin-top: 80px;
+}
+
+.dailyExpenseCard {
+	width: 100%;
+	margin: 10px;
+}

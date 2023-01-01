@@ -1,0 +1,300 @@
+/** @format */
+
+.dailyExpns {
+	min-width: 300px;
+	flex: 4;
+	padding: 15px;
+	margin: 20px;
+	display: block;
+	justify-content: center;
+	flex-wrap: wrap;
+	background: rgb(255, 255, 255);
+}
+.containerExpnsUpdate {
+	overflow: scroll;
+	max-height: 400px;
+}
+.nav-tabs .nav-link {
+	background-color: transparent !important;
+	color: #000;
+	border-top: none !important;
+	border-left: none !important;
+	border-right: none !important;
+}
+.tabs {
+	min-width: 300px;
+	border: none;
+	display: flex;
+	justify-content: center;
+	background: rgba(225, 225, 225, 0.332) !important;
+}
+.tabsContainer {
+	min-width: 300px;
+}
+.nav-tabs .nav-link.active {
+	border-bottom: solid 4px green !important;
+}
+.nav-tabs .nav-link:hover {
+	color: green;
+	background: rgb(253, 253, 253) !important;
+}
+.dailyExpnsTitleContainer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.dailyExpnsTitle {
+	padding: 5px;
+	border-bottom: 3px solid rgb(185, 181, 181);
+	position: relative;
+	color: rgb(64, 154, 124);
+}
+
+.dailyExpnsContainer {
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.dailyExpnsShow {
+	flex: 3;
+	padding: 20px;
+	-webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+	border-radius: 10px;
+}
+
+.dailyExpnsShowTop {
+	display: flex;
+	align-items: center;
+}
+.dailyExpnsShowImg {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-right: 20px;
+}
+.dailyExpnsShowTopTitle {
+	display: flex;
+	flex-direction: column;
+}
+.dailyExpnsShowUserName {
+	font-weight: 600;
+}
+.dailyExpnsShowUserTitle {
+	font-weight: 300;
+}
+.dailyExpnsShowBottom {
+	margin-top: 20px;
+}
+
+.dailyExpnsShowTitle {
+	font-size: 14px;
+	font-weight: 600;
+	color: rgb(128, 127, 127);
+}
+.dailyExpnsShowInfo {
+	display: flex;
+	align-items: center;
+	margin: 20px 0px;
+	color: #444;
+	flex-wrap: wrap;
+}
+.dailyExpnsShowInfoTitle {
+	margin-left: 10px;
+}
+.dailyExpnsShowIcon {
+	font-size: 16px !important;
+	flex-wrap: wrap;
+}
+
+.dailyExpnsUpdate2 {
+	max-height: 270px;
+	flex: 2;
+	padding: 20px;
+	-webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+	margin-left: 20px;
+	flex-wrap: wrap;
+	border-radius: 10px;
+}
+.dailyExpnsUpdateTitle {
+	font-size: 24px;
+	font-weight: 600;
+	color: rgb(64, 154, 124);
+}
+.dailyExpnsUpdateForm {
+	margin-top: 20px;
+}
+.dailyExpnsUpdateItem {
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+}
+.dailyExpnsUpdateItem > label {
+	margin-bottom: 5px;
+	font-size: 14px;
+	flex-wrap: wrap;
+}
+.dailyExpnsUpdateInput {
+	border: none;
+	height: 30px;
+	border-bottom: 1px solid gray;
+	flex-wrap: wrap;
+}
+.dailyExpnsUpdateInput:focus {
+	outline: none;
+}
+
+.dailyExpnsUpdateRight {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.dailyExpnsUpdateButton {
+	border-radius: 5px;
+	border: none;
+	padding: 5px;
+	cursor: pointer;
+	font-weight: 600;
+	margin-top: 20px;
+}
+
+/* Tablets */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+	.dailyExpns {
+		padding: 0;
+		display: block;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin-left: -40px;
+		margin-top: -10px;
+		margin-bottom: -40px;
+		background: rgb(255, 255, 255);
+	}
+	.dailyExpnsContainer {
+		margin-top: 20px;
+		margin-left: 0px;
+		padding-left: 50px;
+		display: block;
+		width: 700px;
+		margin-right: 100px;
+		flex-wrap: wrap;
+	}
+
+	.tabs {
+		min-width: 300px;
+		width: 360px;
+		border: none;
+		display: flex;
+		justify-content: center;
+	}
+	.tabsContainer {
+		width: 360%;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.nav-tabs .nav-link {
+		background-color: transparent !important;
+		margin: 10px;
+		color: #000;
+		border-top: none !important;
+		border-left: none !important;
+		border-right: none !important;
+		cursor: pointer;
+	}
+	.container-fluid {
+		width: 360px;
+		margin: 0;
+		padding: 0;
+	}
+	.dailyExpnsShow {
+		padding: 10px;
+		background: white;
+		margin-left: 10px;
+	}
+	.dailyExpnsUpdate2 {
+		max-height: 270px;
+		flex: 2;
+		margin: 5px;
+		padding: 20px;
+		-webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+		box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+		margin-left: 20px;
+		flex-wrap: wrap;
+		border-radius: 10px;
+		margin-left: 10px;
+	}
+}
+/* Phone */
+@media (max-width: 700px) {
+	.dailyExpns {
+		width: 360px;
+		padding: 0;
+		display: block;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin-left: -40px;
+		margin-top: -10px;
+		margin-bottom: -40px;
+
+		background: rgb(255, 255, 255);
+	}
+	.dailyExpnsContainer {
+		margin-top: 20px;
+		margin-left: 0px;
+		padding-left: 0;
+		display: block;
+		width: 340px;
+		margin-right: 100px;
+		flex-wrap: wrap;
+	}
+
+	.tabs {
+		min-width: 300px;
+		width: 360px;
+		border: none;
+		display: flex;
+		justify-content: center;
+	}
+	.tabsContainer {
+		width: 360%;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.nav-tabs .nav-link {
+		background-color: transparent !important;
+		margin: 10px;
+		color: #000;
+		border-top: none !important;
+		border-left: none !important;
+		border-right: none !important;
+		cursor: pointer;
+	}
+	.container-fluid {
+		width: 360px;
+		margin: 0;
+		padding: 0;
+	}
+	.dailyExpnsShow {
+		padding: 10px;
+		background: white;
+		margin-left: 10px;
+	}
+	.dailyExpnsUpdate2 {
+		max-height: 270px;
+		flex: 2;
+		margin: 5px;
+		padding: 20px;
+		-webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+		box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+		margin-left: 20px;
+		flex-wrap: wrap;
+		border-radius: 10px;
+		margin-left: 10px;
+	}
+}

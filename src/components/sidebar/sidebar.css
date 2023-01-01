@@ -1,0 +1,110 @@
+/** @format */
+
+.main {
+	flex: 1;
+	overflow: scroll;
+}
+.sidebar {
+	flex: 1;
+	background-color: #fff;
+	height: 100vh;
+	position: fixed;
+	top: 50px;
+	transition: 850ms;
+	overflow: scroll;
+	padding: 5px;
+	z-index: 998;
+	border: none;
+	box-shadow: 0 0 16px rgb(0 0 0 / 28%);
+}
+.sidebar {
+	-ms-overflow-style: none; /* Internet Explorer 10+ */
+	scrollbar-width: none; /* Firefox */
+}
+.sidebar::-webkit-scrollbar {
+	display: none; /* Safari and Chrome */
+}
+.hideBar {
+	display: none;
+}
+.collapsed {
+	flex: -1;
+	height: calc(100vh -50px);
+	background: rgb(245, 245, 251);
+	position: sticky;
+	top: 50px;
+}
+.sidebarWrapper {
+	padding: 20px;
+	/* color: #555; */
+	/* color: rgb(164, 164, 164); */
+	color: rgb(83, 82, 82);
+}
+.sidebarMenu {
+	margin-bottom: 10px;
+}
+.sidebarTitle {
+	font-size: 15px;
+	color: black;
+	font-weight: bolder;
+}
+
+.sidebarList {
+	list-style: none;
+	padding: 5px;
+}
+
+.sidebarListItem {
+	padding: 5px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	border-radius: 10px;
+}
+
+.sidebarListItem.active,
+.sidebarListItem:hover {
+	background: rgba(233, 232, 232, 0.354);
+}
+.sidebarListDisabled{
+	list-style: none;
+	padding: 5px;
+}
+.sidebarListItemDisabled{
+	padding: 5px;
+	/* cursor: pointer; */
+	display: flex;
+	align-items: center;
+	border-radius: 10px;
+}
+.sidebarIcon {
+	margin-right: 5px;
+	/* !important if you want to change material Icon size */
+	font-size: 20px !important;
+}
+/* Tablets */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+}
+/* Phone */
+@media (max-width: 700px) {
+	.sidebar {
+	flex: 1;
+	background-color: #fff;
+	height: 100vh;
+	position: fixed;
+	top: 50px;
+	transition: 850ms;
+	overflow: scroll;
+	padding: 5px;
+	z-index: 998;
+	border: none;
+	box-shadow: 0 0 16px rgb(0 0 0 / 28%);
+}
+.sidebar {
+	-ms-overflow-style: none; /* Internet Explorer 10+ */
+	scrollbar-width: none; /* Firefox */
+}
+.sidebar::-webkit-scrollbar {
+	display: none; /* Safari and Chrome */
+}
+}

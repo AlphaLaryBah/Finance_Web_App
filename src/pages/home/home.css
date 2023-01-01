@@ -1,0 +1,114 @@
+/** @format */
+.containerHome {
+	overflow-x: hidden;
+}
+.home {
+	flex: 4;
+	margin-top: 75px;
+	overflow: hidden;
+}
+
+.homeWidgets {
+	display: flex;
+	margin: 20px;
+}
+.chartAndCardContainer {
+	margin-top: 20px;
+	display: flex;
+}
+.leftChart {
+	flex: 3;
+	background: rgb(255, 255, 255);
+	border-radius: 6px;
+	margin-right: 8px;
+	-webkit-box-shadow: 0px 0px 10px -10px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 0px 10px -10px rgba(0, 0, 0, 0.75);
+	margin-left: 12px;
+}
+.rightCard {
+	flex: 1;
+}
+.homeWidgetsLG {
+	width: 100%;
+	margin-top: 10px;
+}
+
+/* Tablets */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+	.containerHome {
+		width: 800px;
+		display: block;
+		justify-content: center;
+		padding: 0;
+		overflow-x: hidden;
+	}
+	.home {
+		flex: 4;
+		margin-top: 70px;
+		overflow: hidden;
+		width: 800px;
+	}
+	.chartAndCardContainer {
+		background: rgb(255, 255, 255);
+		margin-top: 20px;
+		width: 360px;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.leftChart {
+		background: rgb(255, 255, 255);
+		border-radius: 5px;
+		height: 500px;
+		margin-bottom: 200px;
+	}
+	.rightCard {
+		margin-left: 95px;
+	}
+	.homeWidgetsLG {
+		width: 800px;
+		margin-left: -18px;
+		margin-right: -10px;
+		margin-bottom: 100px;
+	}
+}
+/* Phone */
+@media (max-width: 700px) {
+	.containerHome {
+		width: 360px;
+		display: block;
+		justify-content: center;
+		padding: 0;
+		overflow-x: hidden;
+	}
+	.home {
+		flex: 4;
+		margin-top: 70px;
+		overflow: hidden;
+		width: 360px;
+	}
+	.chartAndCardContainer {
+		background: rgb(255, 255, 255);
+		margin-top: 20px;
+		width: 360px;
+		/* display: block; */
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.leftChart {
+		background: rgb(255, 255, 255);
+		border-radius: 5px;
+		height: 500px;
+		margin-bottom: 100px;
+		width: 350px;
+		flex: 12;
+	}
+	.rightCard {
+		/* margin-left: 12px; */
+	}
+	.homeWidgetsLG {
+		width: 360px;
+		margin-left: -18px;
+		margin-right: -10px;
+		margin-bottom: 100px;
+	}
+}

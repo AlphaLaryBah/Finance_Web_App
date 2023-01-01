@@ -1,0 +1,27 @@
+/** @format */
+
+.badge {
+	background: #168b6d;
+	color: white;
+	border-radius: 5px;
+	border-radius: 5px;
+	font-size: 15px;
+	flex-wrap: wrap;
+	padding: 6px;
+	width: 100%;
+	margin-top: 10px;
+}
+/* Tablets */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+}
+/* Phone */
+@media (max-width: 700px) {
+	.container {
+		width: 300px;
+	}
+	.table {
+		width: 300px !important;
+		padding: 0;
+		margin: 0;
+	}
+}
