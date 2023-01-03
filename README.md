@@ -1,7 +1,7 @@
 <!-- @format -->
 
  <h1 align="center">
-Finance Responsive Web App</h1>
+A Responsive Finance Web App</h1>
 
 ### A financial calculator / tracker dashboard, for personal finance and stocks data.
 
