@@ -1,16 +1,13 @@
 <!-- @format -->
 
-# Finance_Web_App
+ <h1 align="center">
+Finance Responsive Web App</h1>
 
-A finance calculator / tracker dashboard, for personal finance and stocks data.
+### A financial calculator / tracker dashboard, for personal finance and stocks data.
 
-<h1 align="center">
-  Getting Started
-</h1>
+## Getting Started
 
-## Quick start
-
-1.  **Get required dependicies**
+1.  **Get required dependencies**
 
     install node modules:
 
@@ -22,6 +19,14 @@ A finance calculator / tracker dashboard, for personal finance and stocks data.
     ```shell
     npm start
     ```
+3.  **Testing**
+
+    ```shell
+    npm test
+    ```
+
+- Launches the test runner in the interactive watch mode.\
+  See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ## Tech Overview
 
@@ -29,18 +34,8 @@ A finance calculator / tracker dashboard, for personal finance and stocks data.
 
 - The static site is hosted on [Netlify](https://euphonious-palmier-dd81a6.netlify.app/)
 
-- Stylesheets are done using CSS and many visual components are bootstrapped from [React Bootstrap ](https://react-bootstrap.github.io/)
+- Stylesheets are done using CSS and some visual components are bootstrapped from [React Bootstrap ](https://react-bootstrap.github.io/) and [MUI](https://mui.com/)
 
 - JavaScript coding style is enforced with a modified version of [eslint airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)
 
 - stocks data: fetched from [Alpha Vantage](https://www.alphavantage.co/): Free Stock APIs in JSON & Excel
-
-### Testing
-
-````shell
-    npm test
-    ```
-
-- Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-````
