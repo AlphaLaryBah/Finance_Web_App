@@ -132,7 +132,7 @@
 	.chartsContainer {
 		flex: 1;
 		margin-top: -40px;
-		margin-left: 0px;
+		margin-left: -10px;
 	}
 	.priceInfoContainer {
 		background: white;
@@ -178,6 +178,7 @@
 		border-radius: 10px;
 		background: white;
 		margin-right: 20px;
+		margin-left: -10px;
 		width: 750px;
 		max-height: 800px;
 	}

@@ -166,72 +166,77 @@ export default function ChartExpense({ title, data }) {
 					<TrendingUpRoundedIcon sx={{ color: "black", margin: "3px" }} />
 					Monthly Expense Chart
 				</h3>
-
-				<ResponsiveContainer
-					width="100%"
-					height={setSize ? 320 : 315}
-					className="theChart mb-5 bg-white"
-				>
-					<AreaChart
-						data={MONTTHLY_DATA}
-						margin={{
-							top: 10,
-							right: 30,
-							left: 10,
-							bottom: 20,
-						}}
+				<div className="row containerOfSecondChart">
+					<ResponsiveContainer
+						width="100%"
+						height={setSize ? 320 : 315}
+						className="theChart mb-5 bg-white"
 					>
-						<defs>
-							<linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
-								<stop offset="5%" stopColor="#8884d8" stopOpacity={0.8} />
-								<stop offset="95%" stopColor="#8884d8" stopOpacity={0} />
-							</linearGradient>
-							<linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
-								<stop offset="5%" stopColor="#82ca9d" stopOpacity={0.8} />
-								<stop offset="95%" stopColor="#82ca9d" stopOpacity={0} />
-							</linearGradient>
-						</defs>
-						<CartesianGrid strokeDasharray="3 3" vertical={false} horizontal />
-						<Brush y={279} />
-						<XAxis dataKey="monthlyTimeLine">
-							<Label
-								style={{
-									textAnchor: "middle",
-									fontSize: "100%",
-									fill: "black",
-								}}
-								angle={0}
-								value={"Months (Year)"}
-								// dx={-26}
-								dy={23}
+						<AreaChart
+							data={MONTTHLY_DATA}
+							margin={{
+								top: 10,
+								right: 30,
+								left: 10,
+								bottom: 20,
+							}}
+						>
+							<defs>
+								<linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+									<stop offset="5%" stopColor="#8884d8" stopOpacity={0.8} />
+									<stop offset="95%" stopColor="#8884d8" stopOpacity={0} />
+								</linearGradient>
+								<linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
+									<stop offset="5%" stopColor="#82ca9d" stopOpacity={0.8} />
+									<stop offset="95%" stopColor="#82ca9d" stopOpacity={0} />
+								</linearGradient>
+							</defs>
+							<CartesianGrid
+								strokeDasharray="3 3"
+								vertical={false}
+								horizontal
 							/>
-						</XAxis>
-						<YAxis axisLine={false}>
-							<Label
-								style={{
-									textAnchor: "middle",
-									fontSize: "100%",
-									fill: "black",
-								}}
-								angle={270}
-								value={"Amount Spent ($)"}
-								dx={-26}
+							<Brush y={279} />
+							<XAxis dataKey="monthlyTimeLine">
+								<Label
+									style={{
+										textAnchor: "middle",
+										fontSize: "100%",
+										fill: "black",
+									}}
+									angle={0}
+									value={"Months (Year)"}
+									// dx={-26}
+									dy={23}
+								/>
+							</XAxis>
+							<YAxis axisLine={false}>
+								<Label
+									style={{
+										textAnchor: "middle",
+										fontSize: "100%",
+										fill: "black",
+									}}
+									angle={270}
+									value={"Amount Spent ($)"}
+									dx={-26}
+								/>
+							</YAxis>{" "}
+							<Tooltip cursor={{ stroke: "#ff0000", strokeWidth: 1 }} />
+							<ReferenceLine x="amount" stroke="red" label="Max" />
+							<ReferenceLine y={1000} label="Max" stroke="red" />
+							<Tooltip />
+							<Area
+								type="monotone"
+								// unit="K"
+								dataKey="monthly"
+								stroke="#82ca"
+								fillOpacity={1}
+								fill="url(#colorUv)"
 							/>
-						</YAxis>{" "}
-						<Tooltip cursor={{ stroke: "#ff0000", strokeWidth: 1 }} />
-						<ReferenceLine x="amount" stroke="red" label="Max" />
-						<ReferenceLine y={1000} label="Max" stroke="red" />
-						<Tooltip />
-						<Area
-							type="monotone"
-							// unit="K"
-							dataKey="monthly"
-							stroke="#82ca"
-							fillOpacity={1}
-							fill="url(#colorUv)"
-						/>
-					</AreaChart>
-				</ResponsiveContainer>
+						</AreaChart>
+					</ResponsiveContainer>
+				</div>
 			</div>
 		</div>
 	);
