@@ -135,7 +135,7 @@ export default function DailyExpns() {
 						onSelect={(k) => setKey(k)}
 					>
 						<Tab
-							eventKey=" Expenses"
+							eventKey="Expenses"
 							title="Expense Charts"
 							className="tabsContainer "
 							data-testid="chart-Daily"
@@ -148,7 +148,7 @@ export default function DailyExpns() {
 							/>
 						</Tab>
 						<Tab
-							eventKey="Expenses"
+							eventKey="edit"
 							title="Edit Expenses"
 							className="tabsContainer"
 							data-testid="chart-Monthly"

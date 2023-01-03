@@ -1,31 +1,45 @@
+<!-- @format -->
+
 # Finance_Web_App
-Finance calculator / tracker dashboard
 
-# Getting Started with Create React App
+A finance calculator / tracker dashboard, for personal finance and stocks data.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+  Getting Started
+</h1>
 
-## Available Scripts
+## Quick start
 
-In the project directory, you can run:
+1.  **Get required dependicies**
 
-### `npm start`
+    install node modules:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    ```shell
+    npm install
+    ```
 
+2.  **Start developing**
+    ```shell
+    npm start
+    ```
 
-### `npm test`
+## Tech Overview
 
+- This project was created with [Create React App](https://github.com/facebook/create-react-app) to build a static site.
+
+- The static site is hosted on [Netlify](https://euphonious-palmier-dd81a6.netlify.app/)
+
+- Stylesheets are done using SCSS/SASS and many visual components are bootstrapped from [React Bootstrap ](https://react-bootstrap.github.io/)
+
+- JavaScript coding style is enforced with a modified version of [eslint airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)
+
+- stocks data: fetched from AlphaVantage API
+
+### Testing
+
+````shell
+   npm test
+   ```
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-
-
-### Deployment
-
-This app is on Netlify
-
+````
