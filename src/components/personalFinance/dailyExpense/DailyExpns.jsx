@@ -129,13 +129,15 @@ export default function DailyExpns() {
 			<div className="row">
 				<div className=" mb-5 row bg-white ">
 					<Tabs
-						className="tabs btn "
-						id="controlled-tab-example"
-						activeKey={key}
-						onSelect={(k) => setKey(k)}
+						// className="tabs btn "
+						// id="controlled-tab-example"
+						// activeKey={key}
+						// onSelect={(k) => setKey(k)}
+						defaultActiveKey={2}
+						id="uncontrolled-tab-example"
 					>
 						<Tab
-							eventKey="Expenses"
+							eventKey={1}
 							title="Expense Charts"
 							className="tabsContainer "
 							data-testid="chart-Daily"
@@ -148,7 +150,7 @@ export default function DailyExpns() {
 							/>
 						</Tab>
 						<Tab
-							eventKey="edit"
+							eventKey={2}
 							title="Edit Expenses"
 							className="tabsContainer"
 							data-testid="chart-Monthly"
