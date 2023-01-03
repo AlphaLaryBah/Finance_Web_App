@@ -66,17 +66,16 @@
 		border-radius: 5px;
 		height: 500px;
 		margin-bottom: 200px;
-		margin-left: -50px;
+		margin-left: -60px;
 		width: 200px;
 	}
 	.rightCard {
-		margin-left: -500px;
+		margin-left: -504px;
 		margin-top: 600px;
 	}
 	.homeWidgetsLG {
-		width: 800px;
-		margin-left: -9px;
-		margin-right: -10px;
+		width: 775px;
+		margin-left: -19px;
 		margin-bottom: 100px;
 	}
 }
