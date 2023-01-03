@@ -130,6 +130,7 @@ export default function FetchStock() {
 					console.log(err);
 				});
 		}
+		resetSearch();
 	};
 	const inPutSubmit = (e) => {
 		e.preventDefault();
@@ -142,11 +143,13 @@ export default function FetchStock() {
 	};
 	const resetSearch = () => {
 		setSearchInput("");
+		setLiveSearchTerm("");
 	};
 
 	const callSubmit = () => {
 		stockName = searchInput;
 		getData();
+		resetSearch();
 	};
 
 	return (

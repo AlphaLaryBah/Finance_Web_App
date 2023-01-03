@@ -26,7 +26,7 @@ export default function Home() {
 		}
 		return original + current;
 	};
-	
+
 	const calcStateTax = (subTotal) => {
 		if (subTotal < 0) {
 			subTotal = subTotal * -1;
@@ -103,12 +103,7 @@ export default function Home() {
 		emergencyFund
 	);
 	//NET Income
-	const calcNetIncomeCurrent = (
-		original,
-		stocks,
-		newIncm,
-		liabilities
-	) => {
+	const calcNetIncomeCurrent = (original, stocks, newIncm, liabilities) => {
 		const totalIncome = original + stocks + newIncm;
 		return totalIncome - liabilities;
 	};
@@ -122,22 +117,19 @@ export default function Home() {
 	const netIncomStateTax = calcStateTax(netIncomeSubTotal);
 	const netIncmFedsTax = calcFedsTax(netIncomeSubTotal);
 	const netIncSumTax = netIncomStateTax + netIncmFedsTax;
-		
+
 	const netIcmAfterTax = totalAfterTax(
 		netIncSumTax,
 		netIncomeSubTotal,
 		dataForMoney.oldNetIncome,
 		netIncomeCurrent
-	); 
-	
+	);
+
 	// MORGAGE
-	const morgageSubTotal = calcSubTotal(dataForMoney.oldMortgage, mortgage)
-	
+	const morgageSubTotal = calcSubTotal(dataForMoney.oldMortgage, mortgage);
+
 	//STOCKS
-		const stocksSubTotal = calcSubTotal(
-			dataForMoney.oldStockMarket,
-			stockMarket
-		);
+	const stocksSubTotal = calcSubTotal(dataForMoney.oldStockMarket, stockMarket);
 	const stockStateTax = calcStateTax(stocksSubTotal);
 	const stockFedsTax = calcFedsTax(stocksSubTotal);
 	const stockSumTax = stockStateTax + stockFedsTax;
@@ -146,14 +138,14 @@ export default function Home() {
 		stocksSubTotal,
 		dataForMoney.oldStockMarket,
 		stockMarket
-	); 
+	);
 
 	// PERCENT CHANGE
 	const calcPercentChange = (originalNumber, newNumber) => {
 		if (newNumber < 0) newNumber = newNumber * -1;
 		let percentChangevalue = 0;
 		const increase = newNumber - originalNumber;
-		const decrease = originalNumber - newNumber; 
+		const decrease = originalNumber - newNumber;
 		//percent Increase: if originalNumber is less than newNumber
 		if (originalNumber < newNumber)
 			percentChangevalue = Math.round((increase / originalNumber) * 100);
@@ -183,7 +175,7 @@ export default function Home() {
 		dataForMoney.oldStockMarket,
 		stocksSubTotal
 	);
-	
+
 	//LOGout all html elements and their class
 	// var docWidth = document.documentElement.offsetWidth;
 
@@ -198,7 +190,7 @@ export default function Home() {
 				<div className="row">
 					<div
 						className=" col-lg-2 col-md-6
-					col-sm-12 mb-2"
+					col-sm-12 mb-2 containsFeaturedInfo"
 					>
 						<FeaturedInfo
 							title="Assets"

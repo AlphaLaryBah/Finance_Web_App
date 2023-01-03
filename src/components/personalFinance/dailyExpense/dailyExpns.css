@@ -214,7 +214,7 @@
 	.dailyExpnsShow {
 		padding: 10px;
 		background: white;
-		margin-left: 10px;
+		margin-left: 70px;
 	}
 	.dailyExpnsUpdate2 {
 		max-height: 270px;
@@ -226,7 +226,7 @@
 		margin-left: 20px;
 		flex-wrap: wrap;
 		border-radius: 10px;
-		margin-left: 10px;
+		margin-left: 70px;
 	}
 }
 /* Phone */

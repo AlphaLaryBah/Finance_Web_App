@@ -66,13 +66,12 @@
 .sidebarListItem:hover {
 	background: rgba(233, 232, 232, 0.354);
 }
-.sidebarListDisabled{
+.sidebarListDisabled {
 	list-style: none;
 	padding: 5px;
 }
-.sidebarListItemDisabled{
+.sidebarListItemDisabled {
 	padding: 5px;
-	/* cursor: pointer; */
 	display: flex;
 	align-items: center;
 	border-radius: 10px;
@@ -88,23 +87,23 @@
 /* Phone */
 @media (max-width: 700px) {
 	.sidebar {
-	flex: 1;
-	background-color: #fff;
-	height: 100vh;
-	position: fixed;
-	top: 50px;
-	transition: 850ms;
-	overflow: scroll;
-	padding: 5px;
-	z-index: 998;
-	border: none;
-	box-shadow: 0 0 16px rgb(0 0 0 / 28%);
-}
-.sidebar {
-	-ms-overflow-style: none; /* Internet Explorer 10+ */
-	scrollbar-width: none; /* Firefox */
-}
-.sidebar::-webkit-scrollbar {
-	display: none; /* Safari and Chrome */
-}
+		flex: 1;
+		background-color: #fff;
+		height: 100vh;
+		position: fixed;
+		top: 50px;
+		transition: 850ms;
+		overflow: scroll;
+		padding: 5px;
+		z-index: 998;
+		border: none;
+		box-shadow: 0 0 16px rgb(0 0 0 / 28%);
+	}
+	.sidebar {
+		-ms-overflow-style: none; /* Internet Explorer 10+ */
+		scrollbar-width: none; /* Firefox */
+	}
+	.sidebar::-webkit-scrollbar {
+		display: none; /* Safari and Chrome */
+	}
 }

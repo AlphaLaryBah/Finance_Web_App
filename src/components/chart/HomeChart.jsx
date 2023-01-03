@@ -108,10 +108,10 @@ export default function HomeChart({ data }) {
 			const dateForTooltTip = dateSnap.getFullYear();
 			//placement of tooltip inside the svg
 			let p = 0;
-			if (yCoord < 400) {
-				p = chartheight / 2;
+			if (yCoord <= 400) {
+				p = chartheight / (2 + 100);
 			} else {
-				p = chartheight * 2;
+				p = chartheight / 20;
 			}
 			let xCor = 0;
 			if (xCoord < 400) xCor = chartwidth / 2;
@@ -205,8 +205,8 @@ export default function HomeChart({ data }) {
 			: svg
 					.append("text")
 					.text("-- Years --")
-					.attr("x", 350)
-					.attr("y", 510)
+					.attr("x", 400)
+					.attr("y", 610)
 					.attr("transform", "translate(-50, -50)");
 		size
 			? null
@@ -256,7 +256,10 @@ export default function HomeChart({ data }) {
 	return (
 		<div
 			id={"chartArea"}
-			style={{ width: `${size ? 50 : 60}vw`, height: `${size ? 60 : 50}vh` }}
+			style={{
+				width: `${size ? 190 : 800}vw`,
+				height: `${size ? 300 : 400}vh`,
+			}}
 		>
 			<svg ref={areaChart}></svg>
 		</div>

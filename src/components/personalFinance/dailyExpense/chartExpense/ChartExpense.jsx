@@ -31,14 +31,14 @@ export default function ChartExpense({ title, data }) {
 		setSize = true;
 	} else {
 		setSize = false;
-	}  
+	}
 	const MONTTHLY_DATA = [
 		{
 			monthly: 2000,
 			monthlyTimeLine: new Date("5/22/2022, 12:13:54 PM").toLocaleString(
 				"en-us",
 				{
-					month: "long",
+					month: "short",
 				}
 			),
 		},
@@ -47,7 +47,7 @@ export default function ChartExpense({ title, data }) {
 			monthlyTimeLine: new Date("6/22/2022, 12:13:54 PM").toLocaleString(
 				"en-us",
 				{
-					month: "long",
+					month: "short",
 				}
 			),
 		},
@@ -55,8 +55,8 @@ export default function ChartExpense({ title, data }) {
 			monthly: 8000,
 			monthlyTimeLine: new Date("7/23/2022, 12:13:54 PM").toLocaleString(
 				"en-us",
-				{ 
-					month: "long",
+				{
+					month: "short",
 				}
 			),
 		},
@@ -65,7 +65,7 @@ export default function ChartExpense({ title, data }) {
 			monthlyTimeLine: new Date("8/24/2022, 12:13:54 PM").toLocaleString(
 				"en-us",
 				{
-					month: "long",
+					month: "short",
 				}
 			),
 		},
@@ -74,7 +74,7 @@ export default function ChartExpense({ title, data }) {
 			monthlyTimeLine: new Date("9/24/2022, 12:13:54 PM").toLocaleString(
 				"en-us",
 				{
-					month: "long",
+					month: "short",
 				}
 			),
 		},

@@ -1,3 +1,5 @@
+/** @format */
+
 import "./topbar.css";
 
 import { Language, NotificationsNone, Settings } from "@material-ui/icons";
@@ -27,8 +29,10 @@ export default function Topbar({ toggleSidebar }) {
 							className=" hamburgerIcon"
 						/>
 					</Link>
-					<img src={logo} alt="" className="logoCash" />
-					Cash Rule
+					<Link to="/" style={{ textDecoration: "none" }}>
+						<img src={logo} alt="" className="logoCash" />
+						<span className="weBname text-dark">Cash Rule</span>
+					</Link>
 				</div>
 				<div className="topRight">
 					<div className="topbarIconContainer d-none d-sm-none d-md-none d-lg-block">
@@ -42,16 +46,18 @@ export default function Topbar({ toggleSidebar }) {
 					<div className="topbarIconContainer d-none d-sm-none d-md-none d-lg-block">
 						<Settings />
 					</div>
-					<img
-						src="https://images.unsplash.com/photo-1587668814117-8a24bcfbb15c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60"
-						alt="topAvatar"
-						className="topAvatar shadow p-1 mb-2 bg-white "
-					/>
+					<Link to="/" style={{ textDecoration: "none" }}>
+						<img
+							src="https://images.unsplash.com/photo-1587668814117-8a24bcfbb15c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60"
+							alt="topAvatar"
+							className="topAvatar shadow p-1 mb-2 bg-white "
+						/>
+					</Link>
 				</div>
 			</div>
 		</div>
 	);
 }
 Topbar.propTypes = {
-	toggleSidebar:PropTypes.func.isRequired, 
-}
+	toggleSidebar: PropTypes.func.isRequired,
+};

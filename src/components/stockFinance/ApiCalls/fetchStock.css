@@ -1,7 +1,6 @@
 /** @format */
 .container {
 	height: 100%;
-	
 }
 /* .fetchStocks {
 	min-width: 100%;
@@ -63,7 +62,7 @@
 }
 /* .containerOfSeacrhInput > button:hover {
 	/* background: rgba(128, 128, 128, 0.224); */
-	/* background: #000; 
+/* background: #000; 
 } */
 .searchIcon {
 	position: relative;
@@ -190,7 +189,7 @@
 }
 /* .chartContainer {
 	/* background: white;  */
-	/* position: relative;
+/* position: relative;
 margin-left: 16%;
 margin-right: 50%;
 width: 720px;
@@ -199,7 +198,7 @@ border-radius: 10px;
 } */
 /* Tablets */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-	.container{
+	.container {
 		height: 100%;
 		margin-left: -1px;
 	}
@@ -235,7 +234,7 @@ border-radius: 10px;
 	.searchIcon {
 		position: absolute;
 		left: 90%;
-		top:3%;
+		top: 3%;
 		padding: 5px;
 		border-radius: 50%;
 		margin: 1px 0px 1px 0px;
@@ -244,7 +243,7 @@ border-radius: 10px;
 		background-color: #e666ff;
 	}
 	.searchOption {
-		margin-left:2%;
+		margin-left: 2%;
 		margin-right: 50%;
 		position: relative;
 		background-color: white;
@@ -257,7 +256,7 @@ border-radius: 10px;
 		border-radius: 0px 0px 10px 10px;
 	}
 	.searchOptionInputChanged {
-		margin-left:6.05%;
+		margin-left: 6.05%;
 		margin-right: 50%;
 		position: relative;
 		background-color: white;
@@ -272,8 +271,13 @@ border-radius: 10px;
 }
 /* Phone */
 @media (max-width: 700px) {
+	.container {
+		height: 100%;
+		margin-left: 10px;
+	}
+
 	.stockNameInput {
-		margin-left:18%;
+		margin-left: 25%;
 		margin-right: 50%;
 		padding: 15px;
 		width: 300px;
@@ -287,7 +291,7 @@ border-radius: 10px;
 	.stockNameInputOnChange {
 		padding: 15px;
 		margin-right: auto;
-		margin-left: 20%;
+		margin-left: 25%;
 		width: 300px;
 		border: none;
 		border-radius: 20px 20px 0px 0px;
@@ -298,8 +302,8 @@ border-radius: 10px;
 
 	.searchIcon {
 		position: absolute;
-		left: 100%;
-		top:3%;
+		left: 110%;
+		top: 3%;
 		padding: 5px;
 		border-radius: 50%;
 		margin: 1px 0px 1px 0px;
@@ -308,7 +312,7 @@ border-radius: 10px;
 		background-color: #e666ff;
 	}
 	.searchOption {
-		margin-left: 22%;
+		margin-left: 27%;
 		margin-right: 50%;
 		position: relative;
 		/* left: -8.01%; */
@@ -322,7 +326,7 @@ border-radius: 10px;
 		border-radius: 0px 0px 10px 10px;
 	}
 	.searchOptionInputChanged {
-		margin-left: 27%;
+		margin-left: 31.5%;
 		margin-right: 50%;
 		position: relative;
 		background-color: white;

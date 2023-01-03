@@ -67,11 +67,9 @@
 }
 
 .chartContainer {
-	/* background: #000; */
 	border-radius: 5px;
 }
 .widgetSmStockName {
-	/* color: rgb(128, 4, 0); */
 	color: green;
 	margin: 5px;
 }
@@ -107,6 +105,7 @@
 		border-radius: 8px;
 		width: 100%;
 		height: 100%;
+		width: 760px;
 	}
 }
 /* Phone */
@@ -114,7 +113,7 @@
 	.widgetSm {
 		margin-top: 510px;
 		margin-bottom: 20px;
-		width: 350px;
+		width: 360px;
 		margin-left: -329px;
 		min-width: 300px;
 		flex: 1;

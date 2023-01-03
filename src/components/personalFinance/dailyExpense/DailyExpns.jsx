@@ -42,13 +42,7 @@ export default function DailyExpns() {
 			weeklyTimeLine: new Date("6/22/2022, 12:13:54 PM").toLocaleString(
 				"en-us",
 				{
-					weekday: "long",
-				}
-			),
-			monthlyTimeLine: new Date("5/22/2022, 12:13:54 PM").toLocaleString(
-				"en-us",
-				{
-					month: "long",
+					weekday: "short",
 				}
 			),
 		},
@@ -59,7 +53,7 @@ export default function DailyExpns() {
 			weeklyTimeLine: new Date("6/22/2022, 12:13:54 PM").toLocaleString(
 				"en-us",
 				{
-					weekday: "long",
+					weekday: "short",
 				}
 			),
 		},
@@ -70,7 +64,7 @@ export default function DailyExpns() {
 			weeklyTimeLine: new Date("7/23/2022, 12:13:54 PM").toLocaleString(
 				"en-us",
 				{
-					weekday: "long",
+					weekday: "short",
 				}
 			),
 		},
@@ -82,7 +76,7 @@ export default function DailyExpns() {
 			weeklyTimeLine: new Date("8/24/2022, 12:13:54 PM").toLocaleString(
 				"en-us",
 				{
-					weekday: "long",
+					weekday: "short",
 				}
 			),
 		},
@@ -93,7 +87,7 @@ export default function DailyExpns() {
 			weeklyTimeLine: new Date("8/24/2022, 12:13:54 PM").toLocaleString(
 				"en-us",
 				{
-					weekday: "long",
+					weekday: "short",
 				}
 			),
 		},
@@ -112,10 +106,10 @@ export default function DailyExpns() {
 				daily: amountInput,
 				createdAt: expenseAddedAt,
 				weeklyTimeLine: new Date().toLocaleString("en-us", {
-					weekday: "long",
+					weekday: "short",
 				}),
 				monthlyTimeLine: new Date().toLocaleString("en-us", {
-					month: "long",
+					month: "short",
 				}),
 			},
 		];
@@ -190,6 +184,7 @@ export default function DailyExpns() {
 													{expenses === undefined
 														? null
 														: expenses.map((item, index) => {
+																console.log();
 																return (
 																	<div
 																		className="dailyExpnsShowInfo"
@@ -204,7 +199,7 @@ export default function DailyExpns() {
 																		</span>
 																		<span className="dailyExpnsShowInfoTitle text-danger">
 																			<CurrencyFormat
-																				value={item.amount}
+																				value={item.daily}
 																				displayType={"text"}
 																				thousandSeparator={true}
 																				prefix={"- $"}

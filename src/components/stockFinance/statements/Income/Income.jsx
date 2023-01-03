@@ -259,13 +259,9 @@ export default function Income({ incomeData }) {
 						>{`${year4GrowthRate} %`}</td>
 						<td>{`0 %`}</td>
 					</tr>
-				</tbody>
-			</Table>
-			<Table responsive="md">
-				<thead>
-					<tr></tr>
-				</thead>
-				<tbody>
+					<thead>
+						<tr></tr>
+					</thead>
 					<tr>
 						<td className="text-white bg-info border-2">Total Revenue</td>
 						<td></td>
@@ -368,13 +364,10 @@ export default function Income({ incomeData }) {
 						>{`${year4GrowthRateTR} %`}</td>
 						<td>{`0 %`}</td>
 					</tr>
-				</tbody>
-			</Table>
-			<Table responsive="lg">
-				<thead>
-					<tr></tr>
-				</thead>
-				<tbody>
+
+					<thead>
+						<tr></tr>
+					</thead>
 					<tr>
 						<td className="text-white bg-info border-2">Net Income</td>
 						<td> </td>

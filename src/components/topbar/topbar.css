@@ -14,6 +14,9 @@
 	box-shadow: 0 0 16px rgb(0 0 0 / 28%);
 	overflow-x: hidden;
 }
+/* .weBname {
+	text-decoration: none;
+} */
 
 .hamburgerIcon {
 	margin-bottom: 2px;
@@ -52,7 +55,7 @@
 
 .topbarIconContainer {
 	position: relative;
-	cursor: pointer;
+	/* cursor: pointer; */
 	margin-right: 10px;
 	color: #555;
 }
