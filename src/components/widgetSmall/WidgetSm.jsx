@@ -84,161 +84,164 @@ export default function WidgetSm() {
 			</div>
 
 			<hr />
-			<ul className="widgetSmList">
-				<div className="widgetSmStocKInfo shadow p-2 mb-3 bg-white rounded">
-					<span className="widgetSmStockName">
-						<CandlestickChartSharpIcon sx={{ color: "rgb(128, 4, 0)" }} /> AAPL
-					</span>
-					<span className="widgetStockTitle">
-						<Badge bg="warning" text="dark">
-							Apple Inc.
-						</Badge>
-					</span>
-					<button className="widgetSmButton shadow p-1 mb-3 bg-white rounded ">
-						<ArrowUpward
-							className="widgetSmIcon fw-bolder"
-							style={{ color: "green" }}
-						/>
-						<span className=" stockInfoNumber">18</span>
-					</button>
-				</div>
-				<li className="widgetSmListItem shadow p-1 mb-3 bg-white rounded">
-					<ResponsiveContainer
-						width="100%"
-						height={150}
-						className=" chartContainer"
-					>
-						<LineChart
-							// width={500}
-							// height={200}
-							data={data}
-							margin={{
-								top: 10,
-								right: 30,
-								left: 0,
-								bottom: 0,
-							}}
+			<div className="containsSmWidget">
+				<ul className="widgetSmList">
+					<div className="widgetSmStocKInfo shadow p-2 mb-3 bg-white rounded">
+						<span className="widgetSmStockName">
+							<CandlestickChartSharpIcon sx={{ color: "rgb(128, 4, 0)" }} />{" "}
+							AAPL
+						</span>
+						<span className="widgetStockTitle">
+							<Badge bg="warning" text="dark">
+								Apple Inc.
+							</Badge>
+						</span>
+						<button className="widgetSmButton shadow p-1 mb-3 bg-white rounded ">
+							<ArrowUpward
+								className="widgetSmIcon fw-bolder"
+								style={{ color: "green" }}
+							/>
+							<span className=" stockInfoNumber">18</span>
+						</button>
+					</div>
+					<li className="widgetSmListItem shadow p-1 mb-3 bg-white rounded">
+						<ResponsiveContainer
+							width="100%"
+							height={150}
+							className=" chartContainer"
 						>
-							<CartesianGrid
-								strokeDasharray="3 3"
-								vertical={false}
-								horizontal
+							<LineChart
+								// width={500}
+								// height={200}
+								data={data}
+								margin={{
+									top: 10,
+									right: 30,
+									left: 0,
+									bottom: 0,
+								}}
+							>
+								<CartesianGrid
+									strokeDasharray="3 3"
+									vertical={false}
+									horizontal
+								/>
+								<XAxis dataKey="name" />
+								<YAxis tickLine={false} axisLine={false} />
+								<Tooltip />
+								<Line
+									name="price ($)"
+									type="monotone"
+									dataKey="value"
+									stroke="#82ca9d"
+									fill="red"
+								/>
+							</LineChart>
+						</ResponsiveContainer>
+					</li>
+					<div className="widgetSmStocKInfo shadow p-3 mb-3 bg-white rounded">
+						<span className="widgetSmStockName">
+							<CandlestickChartSharpIcon sx={{ color: "rgb(128, 4, 0)" }} />
+							GOOGL
+						</span>
+						<span className="widgetStockTitle">
+							<Badge bg="warning" text="dark">
+								Alphabet Inc.
+							</Badge>
+						</span>
+						<button className="widgetSmButton shadow p-1 mb-3 bg-white rounded ">
+							<ArrowDownward
+								className="widgetSmIcon fw-bolder"
+								style={{ color: "red" }}
 							/>
-							<XAxis dataKey="name" />
-							<YAxis tickLine={false} axisLine={false} />
-							<Tooltip />
-							<Line
-								name="price ($)"
-								type="monotone"
-								dataKey="value"
-								stroke="#82ca9d"
-								fill="red"
-							/>
-						</LineChart>
-					</ResponsiveContainer>
-				</li>
-				<div className="widgetSmStocKInfo shadow p-3 mb-3 bg-white rounded">
-					<span className="widgetSmStockName">
-						<CandlestickChartSharpIcon sx={{ color: "rgb(128, 4, 0)" }} />
-						GOOGL
-					</span>
-					<span className="widgetStockTitle">
-						<Badge bg="warning" text="dark">
-							Alphabet Inc.
-						</Badge>
-					</span>
-					<button className="widgetSmButton shadow p-1 mb-3 bg-white rounded ">
-						<ArrowDownward
-							className="widgetSmIcon fw-bolder"
-							style={{ color: "red" }}
-						/>
-						<span className=" stockInfoNumber">10</span>
-					</button>
-				</div>
-				<li className="widgetSmListItem shadow p-1 mb-3 bg-white rounded">
-					<ResponsiveContainer
-						width="100%"
-						height={200}
-						className="chartContainer"
-					>
-						<LineChart
-							// width={500}
-							// height={200}
-							data={data}
-							// syncId="anyId"
-							margin={{
-								top: 10,
-								right: 30,
-								left: 0,
-								bottom: 0,
-							}}
+							<span className=" stockInfoNumber">10</span>
+						</button>
+					</div>
+					<li className="widgetSmListItem shadow p-1 mb-3 bg-white rounded">
+						<ResponsiveContainer
+							width="100%"
+							height={200}
+							className="chartContainer"
 						>
-							<CartesianGrid strokeDasharray="3 3" />
-							<XAxis dataKey="name" />
-							<YAxis />
-							<Tooltip />
-							<Line
-								name="price ($)"
-								type="monotone"
-								dataKey="price"
-								stroke="#82ca9d"
-								fill="red"
+							<LineChart
+								// width={500}
+								// height={200}
+								data={data}
+								// syncId="anyId"
+								margin={{
+									top: 10,
+									right: 30,
+									left: 0,
+									bottom: 0,
+								}}
+							>
+								<CartesianGrid strokeDasharray="3 3" />
+								<XAxis dataKey="name" />
+								<YAxis />
+								<Tooltip />
+								<Line
+									name="price ($)"
+									type="monotone"
+									dataKey="price"
+									stroke="#82ca9d"
+									fill="red"
+								/>
+								{/* <Brush /> */}
+							</LineChart>
+						</ResponsiveContainer>
+					</li>
+					<div className="widgetSmStocKInfo shadow p-3 mb-3 bg-white rounded">
+						<span className="widgetSmStockName">
+							<CandlestickChartSharpIcon sx={{ color: "rgb(128, 4, 0)" }} />
+							MSFT
+						</span>
+						<span className="widgetStockTitle">
+							<Badge bg="warning" text="dark">
+								Microsoft Inc.
+							</Badge>
+						</span>
+						<button className="widgetSmButton shadow p-1 mb-3 bg-white rounded">
+							<ArrowUpward
+								className="widgetSmIcon fw-bolder"
+								style={{ color: "green" }}
 							/>
-							{/* <Brush /> */}
-						</LineChart>
-					</ResponsiveContainer>
-				</li>
-				<div className="widgetSmStocKInfo shadow p-3 mb-3 bg-white rounded">
-					<span className="widgetSmStockName">
-						<CandlestickChartSharpIcon sx={{ color: "rgb(128, 4, 0)" }} />
-						MSFT
-					</span>
-					<span className="widgetStockTitle">
-						<Badge bg="warning" text="dark">
-							Microsoft Inc.
-						</Badge>
-					</span>
-					<button className="widgetSmButton shadow p-1 mb-3 bg-white rounded">
-						<ArrowUpward
-							className="widgetSmIcon fw-bolder"
-							style={{ color: "green" }}
-						/>
-						<span className=" stockInfoNumber">12</span>
-					</button>
-				</div>
-				<li className="widgetSmListItem">
-					<ResponsiveContainer
-						width="100%"
-						height={200}
-						className=" chartContainer"
-					>
-						<AreaChart
-							// width={500}
-							// height={200}
-							data={data}
-							syncId="anyId"
-							margin={{
-								top: 10,
-								right: 30,
-								left: 0,
-								bottom: 0,
-							}}
+							<span className=" stockInfoNumber">12</span>
+						</button>
+					</div>
+					<li className="widgetSmListItem">
+						<ResponsiveContainer
+							width="100%"
+							height={200}
+							className=" chartContainer"
 						>
-							<CartesianGrid strokeDasharray="3 3" />
-							<XAxis dataKey="name" />
-							<YAxis />
-							<Tooltip />
-							<Area
-								name="price ($)"
-								type="monotone"
-								dataKey="price"
-								stroke="black"
-								fill="green"
-							/>
-						</AreaChart>
-					</ResponsiveContainer>
-				</li>
-			</ul>
+							<AreaChart
+								// width={500}
+								// height={200}
+								data={data}
+								syncId="anyId"
+								margin={{
+									top: 10,
+									right: 30,
+									left: 0,
+									bottom: 0,
+								}}
+							>
+								<CartesianGrid strokeDasharray="3 3" />
+								<XAxis dataKey="name" />
+								<YAxis />
+								<Tooltip />
+								<Area
+									name="price ($)"
+									type="monotone"
+									dataKey="price"
+									stroke="black"
+									fill="green"
+								/>
+							</AreaChart>
+						</ResponsiveContainer>
+					</li>
+				</ul>
+			</div>
 		</div>
 	);
 }

@@ -1,4 +1,3 @@
-/** @format */
 .containerHome {
 	overflow-x: hidden;
 	margin-top: 77px;
@@ -18,106 +17,66 @@
 .chartAndCardContainer {
 	margin-top: 20px;
 	display: flex;
+	width: clamp(100%, 91%, 100%);
+	height: clamp(100%, 91%, 100%);
+
+	background: rgba(255, 255, 255, 0.015);
 }
 .leftChart {
-	flex: 3;
-	background: rgb(255, 255, 255);
+	flex: 4;
 	border-radius: 6px;
 	margin-right: 8px;
 	-webkit-box-shadow: 0px 0px 10px -10px rgba(0, 0, 0, 0.75);
 	box-shadow: 0px 0px 10px -10px rgba(0, 0, 0, 0.75);
-	margin-left: 12px;
-	/* width: 700px;  */
-	min-width: 500px;
+	margin-left: clamp(0, 12px, 12px);
+
+	width: clamp(10%, 700px, 700px);
+
 	max-height: 610px;
 }
 .rightCard {
-	flex: 1;
+	flex: 2;
 }
 .homeWidgetsLG {
-	width: 91%;
-	margin-top: 30px;
-	margin-left: 50px;
+	width: clamp(91%, 90%, 90%);
+	margin-top: clamp(10px, 30px, 30px);
+	margin-left: clamp(52px, 50px, 50px);
 }
 
-/* Tablets */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-	.containerHome {
-		width: 800px;
-		display: block;
-		justify-content: center;
-		padding: 0;
-		overflow-x: hidden;
-	}
-	.home {
-		flex: 4;
-		margin-top: 70px;
-		overflow: hidden;
-		width: 800px;
+@media (max-width: 1024px) {
+	.homeWidgetsLG {
+		margin-left: -20px;
+		width: 100%;
 	}
 	.chartAndCardContainer {
-		background: rgb(255, 255, 255);
-		margin-top: 20px;
-		margin-left: 0px;
-		margin-right: 0px;
+		display: block;
+		justify-content: center;
+		justify-items: center;
+		margin-left: -20px;
+		padding: 10px;
 	}
 	.leftChart {
-		background: rgb(255, 255, 255);
-		border-radius: 5px;
-		height: 500px;
-		margin-bottom: 200px;
-		margin-left: -60px;
-		width: 200px;
+		margin-left: -70px;
+		width: 100%;
+		max-height: 200px;
+
+		/* padding: 20px; */
 	}
 	.rightCard {
-		margin-left: -504px;
-		margin-top: 600px;
-	}
-	.homeWidgetsLG {
-		width: 775px;
-		margin-left: -19px;
-		margin-bottom: 100px;
+		width: 160%;
+		margin-left: -46px;
 	}
 }
-/* Phone */
-@media (max-width: 700px) {
-	.containerHome {
-		width: 360px;
-		display: block;
-		justify-content: center;
-		padding: 0;
-		overflow-x: hidden;
-	}
-	.home {
-		flex: 4;
-		margin-top: 10px;
-		overflow: hidden;
-		width: 360px;
-		padding-left: 0px;
-	}
-	.chartAndCardContainer {
-		background: rgb(255, 255, 255);
-		margin-top: 20px;
-		width: 360px;
-		margin-left: 0px;
-		margin-right: 0px;
+@media (min-width: 540px) and (max-width: 1024px) {
+	.rightCard {
+		flex: 2;
+
+		width: 120%;
+		margin-left: -40px;
 	}
 	.leftChart {
-		background: rgb(255, 255, 255);
-		border-radius: 5px;
-		height: 500px;
-		margin-bottom: 100px;
-		margin-left: -20px;
-		width: 350px;
-		flex: 12;
-	}
-	.rightCard {
-		margin-left: -160px;
-	}
-	.homeWidgetsLG {
-		width: 360px;
-		margin-left: -18px;
-		margin-right: -10px;
-		margin-bottom: 100px;
+		margin-left: 10px;
+		width: 150%;
+		max-height: 200px;
 	}
 }

@@ -257,11 +257,17 @@ export default function HomeChart({ data }) {
 		<div
 			id={"chartArea"}
 			style={{
-				width: `${size ? 190 : 800}vw`,
+				width: `${
+					size
+						? "100%"
+						: window.innerWidth > 700 && window.innerWidth < 1024
+						? "100%"
+						: "100%"
+				}vw`,
 				height: `${size ? 300 : 400}vh`,
 			}}
 		>
-			<svg ref={areaChart}></svg>
+			<svg ref={areaChart} style={{ background: "rgb(255, 255, 255)" }}></svg>
 		</div>
 	);
 }
