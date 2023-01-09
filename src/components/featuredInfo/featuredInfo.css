@@ -110,9 +110,7 @@
 @media (min-width: 300px ) and (max-width: 480px) {
 	.featured {
 		width: 140%;
-		/* min-width: 120%; */
 		margin-left: -42px;
-		/* margin-right: 140%; */
 		display: block;
 		flex-direction: column;
 		justify-content: center;

@@ -152,7 +152,7 @@ export default function DailyExpns() {
 						<Tab
 							eventKey={2}
 							title="Edit Expenses"
-							className="tabsContainer"
+							className="tabsContainer "
 							data-testid="chart-Monthly"
 						>
 							<div className="row">

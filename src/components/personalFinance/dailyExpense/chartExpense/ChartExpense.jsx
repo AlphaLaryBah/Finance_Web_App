@@ -84,7 +84,7 @@ export default function ChartExpense({ title, data }) {
 		<div className="chartExpenses container-fluid  ">
 			<h3 className="chartExpensesTitle m-3">{title}</h3>
 			<hr />
-			<div className="row chartContainer">
+			<div className="row chartContainer ">
 				<h3 className="text-success mb-3 text-center">
 					<TrendingUpRoundedIcon sx={{ color: "black", margin: "3px" }} />
 					Daily Expense Chart
