@@ -154,11 +154,11 @@ export default function EpsCharts({
 								) <span className="text-danger">-0.69</span>
 							</span>
 						</div>
-						<div className="bottomRow">
+						<div className="bottomRow ">
 							<span className="text-muted ">Closed:</span>
 							<span className="text-muted p-2">{date}</span>
-							<span className="p-2 text-muted"> {overView.currency}</span>
-							<span>{overView.exchange}</span>
+							<span className="p-2 text-muted "> {overView.currency}</span>
+							<span className="">{overView.exchange}</span>
 						</div>
 					</div>
 					<hr />
@@ -244,10 +244,10 @@ export default function EpsCharts({
 				<div className="stockInfoOnRight">
 					<div className="aboutCard mt-4">
 						<h5 className=" cardTitle fw-bold text-success">
-							About: <span className="text-info m-2">{overView.name} </span>
+							About: <span className="text-info m-2 ">{overView.name} </span>
 						</h5>
 						<hr />
-						<p>{overView.about}</p>
+						<p className="p-2">{overView.about}</p>
 					</div>
 					<div className="generalInfoCard">
 						<h5 className="text-center  fw-bold text-success">

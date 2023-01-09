@@ -128,21 +128,29 @@
 	margin-top: -300px;
 	margin-left: -1px;
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+
+@media (max-width: 1024px) {
 	.chartsContainer {
-		flex: 1;
-		margin-top: -40px;
-		margin-left: -10px;
+		display: block;
+		width: 100%;
+		margin-top: -20px;
+		margin-left: 140px;
 	}
 	.priceInfoContainer {
 		background: white;
 		margin-top: 5px;
 		margin-left: 5px;
+		padding: 10px;
 	}
 	.topRow {
 		display: flex;
 		align-items: baseline;
 		gap: 15px;
+	}
+	.bottomRow {
+		justify-content: start;
+		margin-right: 15px;
+		width: 100%;
 	}
 	.percentChange {
 		color: #a50e0e;
@@ -170,16 +178,15 @@
 	.chartAndInfoContainer {
 		display: block;
 		justify-content: space-between;
-		width: 750px;
-		margin-left: -8px;
+		width: 100%;
+		margin-left: -30px;
 	}
 	.chartOnLeft {
-		flex: 3;
 		border-radius: 10px;
 		background: white;
 		margin-right: 20px;
 		margin-left: -10px;
-		width: 750px;
+		width: 110%;
 		max-height: 800px;
 	}
 	.stockInfoOnRight {
@@ -190,15 +197,15 @@
 		border-radius: 10px;
 		border: 1px #dadce0 solid;
 		margin-bottom: 16px;
-		padding: 16px 16px 0 16px;
 		box-sizing: border-box;
 		background: white;
-		margin: 5px;
+		margin-left: -10px;
 		margin-right: 15px;
 		max-height: 500px;
 		overflow: scroll;
 		margin-bottom: 320px;
-		width: 700px;
+		width: 95%;
+		padding: 32px;
 	}
 	.aboutCard {
 		-ms-overflow-style: none; /* Internet Explorer 10+ */
@@ -211,15 +218,15 @@
 		border-radius: 10px;
 		border: 1px #dadce0 solid;
 		margin-bottom: 16px;
-		padding: 16px 16px 0 16px;
 		box-sizing: border-box;
 		background: white;
-		margin-right: 15px;
 		margin-top: -300px;
 		margin-bottom: 300px;
 		max-height: 500px;
-		width: 700px;
+		width: 92%;
 		margin-right: 20px;
+		margin-left: -1px;
+		padding: 20px;
 	}
 	.cardTitle {
 		position: sticky;
@@ -228,7 +235,7 @@
 		display: flex;
 		justify-content: space-between;
 		border-bottom: 1px #dadce0 solid;
-		padding: 2px;
+		padding: 10px;
 		margin: 5px;
 	}
 	.arrowContainer {
@@ -266,139 +273,48 @@
 		margin-left: -1px;
 	}
 }
-/* Phone */
-@media (max-width: 700px) {
-	.chartsContainer {
-		flex: 1;
-		margin-top: -40px;
-		margin-left: 10px;
-	}
-	.priceInfoContainer {
-		background: white;
-		margin-top: 5px;
-		margin-left: 5px;
-	}
-	.topRow {
-		display: flex;
-		align-items: baseline;
-		gap: 15px;
-	}
-	.percentChange {
-		color: #a50e0e;
-		background: #fce8e6;
-		border-radius: 8px;
-		border: none;
-		padding: 10px;
-		letter-spacing: 0.00625em;
-		font-size: 1rem;
-		font-weight: 500;
-		line-height: 1.5rem;
-	}
-	.percentArrow {
-		color: #a50e0e;
-	}
-	.percentToday {
-		color: #a50e0e;
-		font-weight: bolder;
-	}
-	.rowMiddle {
-		display: flex;
-		gap: 20px;
-	}
 
-	.chartAndInfoContainer {
+@media (min-width: 540px) and (max-width: 1024px) {
+	.chartsContainer {
 		display: block;
-		justify-content: space-between;
-		width: 360px;
-		margin-left: -20px;
+		width: 100%;
+		margin-top: -20px;
+		margin-left: 250px;
 	}
 	.chartOnLeft {
-		flex: 3;
 		border-radius: 10px;
 		background: white;
-		margin-right: 10px;
-		width: 360px;
-		max-height: 700px;
-	}
-	.stockInfoOnRight {
-		flex: 1;
-	}
-	.generalInfoCard {
-		border-radius: 10px;
-		border: 1px #dadce0 solid;
-		margin-top: -300px;
-		margin-bottom: 300px;
-		padding: 16px 16px 0 16px;
-		box-sizing: border-box;
-		background: white;
-		margin-left: 12px;
-		max-height: 500px;
-		width: 360px;
 		margin-right: 20px;
+		margin-left: -10px;
+		width: 100%;
+		max-height: 800px;
 	}
 	.aboutCard {
 		border-radius: 10px;
 		border: 1px #dadce0 solid;
 		margin-bottom: 16px;
-		padding: 16px 16px 0 16px;
 		box-sizing: border-box;
 		background: white;
-		margin: 5px;
-		margin-left: 12px;
+		margin-left: -20px;
+		margin-right: 15px;
 		max-height: 500px;
 		overflow: scroll;
 		margin-bottom: 320px;
-		width: 360px;
+		width: 115%;
+		padding: 32px;
 	}
-	.aboutCard {
-		-ms-overflow-style: none; /* Internet Explorer 10+ */
-		scrollbar-width: none; /* Firefox */
-	}
-	.aboutCard::-webkit-scrollbar {
-		display: none; /* Safari and Chrome */
-	}
-	.cardTitle {
-		position: sticky;
-	}
-	.containsStockInfo {
-		display: flex;
-		justify-content: space-between;
-		border-bottom: 1px #dadce0 solid;
-		padding: 2px;
-		margin: 5px;
-	}
-	.arrowContainer {
-		background: rgba(243, 0, 0, 0.616);
-		border-radius: 50%;
-		margin: 5px;
-	}
-	.arrowDownWard {
-		color: white;
-		text-align: center;
-		padding: 4px;
-	}
-	.amountChanges {
-		border: none;
-		border-radius: 5px;
-		text-align: center;
-		padding: 5px;
-		color: white;
-		font-weight: 600;
-		height: 100%;
-	}
-
-	.stockList {
-		height: 100%;
-	}
-
-	.stockList {
-		display: flex;
-		margin: 10px;
-	}
-	.stockListLeft {
-		width: 340px;
-		margin: 20px;
+	.generalInfoCard {
+		border-radius: 10px;
+		border: 1px #dadce0 solid;
+		margin-bottom: 16px;
+		box-sizing: border-box;
+		background: white;
 		margin-top: -300px;
-		margin-left: -1px;
+		margin-bottom: 300px;
+		max-height: 500px;
+		width: 115%;
+		margin-right: 20px;
+		margin-left: -20px;
+		padding: 20px;
 	}
 }

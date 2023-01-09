@@ -2,7 +2,8 @@
 
 .accordionContainer {
 	margin-top: 15px;
-	width: 1100px;
+	width: 123.5%;
+	padding: 10px;
 }
 .accordion-button {
 	background-color: rgba(123, 122, 122, 0.09) !important;
@@ -16,21 +17,19 @@
 .accordion-button:not(.collapsed) {
 	color: #212529;
 }
-/* Tablets */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+@media (max-width: 1024px) {
 	.accordionContainer {
 		margin-top: 15px;
-		margin-left: -10px;
+		margin-left: -50px;
 
-		width: 700px;
+		width: 113%;
 	}
 }
-/* Phone */
-@media (max-width: 700px) {
+@media (min-width: 540px) and (max-width: 1024px) {
 	.accordionContainer {
 		margin-top: 15px;
-		margin-left: -18px;
+		margin-left: -65px;
 
-		width: 360px;
+		width: 232%;
 	}
 }

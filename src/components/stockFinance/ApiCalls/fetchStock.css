@@ -48,15 +48,13 @@
 	padding: 15px;
 	width: 400px;
 	border: none;
-	/* background: rgba(202, 233, 206, 0.07); */
 	border-radius: 20px 20px 0px 0px;
-	/* margin-bottom: 0px; */
 	border-top: 1px solid rgb(184, 182, 182);
 	border-left: 1px solid rgb(184, 182, 182);
 	border-right: 1px solid rgb(184, 182, 182);
 }
 .containerOfSeacrhInput > button {
-	/* background: none; */
+	 background: none; 
 	border: none;
 	display: flex;
 	justify-content: center;
@@ -197,149 +195,7 @@ width: 720px;
 border-radius: 10px;
  padding: 10px;   
 } */
-/* Tablets */
-/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-	.container {
-		height: 100%;
-		margin-left: -1px;
-	}
-	.stockNameInput {
-		margin-left: auto;
-		margin-right: auto;
-		margin-right: -35px;
-		padding: 15px;
-		width: 700px;
-		border: none;
-		border-radius: 20px;
-		box-shadow: -1px 4px 1px 0px rgba(81, 81, 81, 0.48);
-		-webkit-box-shadow: -1px 4px 1px 0px rgba(118, 118, 118, 0.48);
-		-moz-box-shadow: -1px 1px 1px 0px rgba(102, 102, 102, 0.48);
-	}
 
-	.stockNameInputOnChange {
-		margin-left: auto;
-		margin-right: auto;
-		margin-right: -35px;
-		padding: 15px;
-		width: 700px;
-		border: none;
-		border-radius: 20px 20px 0px 0px;
-		margin-bottom: 0px;
-		box-shadow: 0px 0px 5px rgb(233, 233, 233), 0px -2px 0px rgb(237, 237, 237);
-		-webkit-box-shadow: 0px 0px 5px rgb(233, 233, 233),
-			0px -2px 0px rgb(237, 237, 237);
-		-moz-box-shadow: 0px 0px 5px rgb(233, 233, 233),
-			0px -2px 0px rgb(237, 237, 237);
-	}
-
-	.searchIcon {
-		position: absolute;
-		left: 90%;
-		top: 3%;
-		padding: 5px;
-		border-radius: 50%;
-		margin: 1px 0px 1px 0px;
-		border: none;
-		color: white;
-		background-color: #e666ff;
-	}
-	.searchOption {
-		margin-left: 2%;
-		margin-right: 50%;
-		position: relative;
-		background-color: white;
-		height: 390px;
-		margin-top: -1px;
-		width: 700px;
-		max-height: 400px;
-		overflow: scroll;
-		border: 2px solid rgb(214, 214, 214);
-		border-radius: 0px 0px 10px 10px;
-	}
-	.searchOptionInputChanged {
-		margin-left: 6.05%;
-		margin-right: 50%;
-		position: relative;
-		background-color: white;
-		height: 390px;
-		margin-top: -1px;
-		width: 700px;
-		max-height: 400px;
-		overflow: scroll;
-		border: 2px solid rgb(214, 214, 214);
-		border-radius: 0px 0px 10px 10px;
-	}
-} */
-/* Phone */
-/* @media (max-width: 700px) {
-	.container {
-		height: 100%;
-		margin-left: 10px;
-		background:none;
-	}
-
-	.stockNameInput {
-		margin-left: 25%;
-		margin-right: 50%;
-		padding: 15px;
-		width: 300px;
-		border: none;
-		border-radius: 20px;
-		box-shadow: -1px 4px 1px 0px rgba(81, 81, 81, 0.48);
-		-webkit-box-shadow: -1px 4px 1px 0px rgba(118, 118, 118, 0.48);
-		-moz-box-shadow: -1px 1px 1px 0px rgba(102, 102, 102, 0.48);
-	}
-
-	.stockNameInputOnChange {
-		padding: 15px;
-		margin-right: auto;
-		margin-left: 25%;
-		width: 300px;
-		border: none;
-		border-radius: 20px 20px 0px 0px;
-		border-top: 1px solid rgb(184, 182, 182);
-		border-left: 1px solid rgb(184, 182, 182);
-		border-right: 1px solid rgb(184, 182, 182);
-	}
-
-	.searchIcon {
-		position: absolute;
-		left: 110%;
-		top: 3%;
-		padding: 5px;
-		border-radius: 50%;
-		margin: 1px 0px 1px 0px;
-		border: none;
-		color: white;
-		background-color: #e666ff;
-	}
-	.searchOption {
-		margin-left: 27%;
-		margin-right: 50%;
-		position: relative;
-		background-color: white;
-		height: 390px;
-		margin-top: -1px;
-		width: 302px;
-		max-height: 400px;
-		overflow: scroll;
-		border: 2px solid rgb(214, 214, 214);
-		border-radius: 0px 0px 10px 10px;
-	}
-	.searchOptionInputChanged {
-		margin-left: 31.5%;
-		margin-right: 50%;
-		position: relative;
-		background-color: white;
-		height: 390px;
-		margin-top: -1px;
-		width: 300px;
-		max-height: 400px;
-		overflow: scroll;
-		border: 2px solid rgb(214, 214, 214);
-		border-radius: 0px 0px 10px 10px;
-	}
-} */
 @media (max-width: 1024px) {
 	.container {
 		height: 100%;
@@ -383,13 +239,13 @@ border-radius: 10px;
 		background-color: #e666ff;
 	}
 	.searchOption {
-		margin-left: 27%;
+		margin-left: 26.8%;
 		margin-right: 50%;
 		position: relative;
 		background-color: white;
 		height: 390px;
 		margin-top: -1px;
-		width: 302px;
+		width: 301px;
 		max-height: 400px;
 		overflow: scroll;
 		border: 2px solid rgb(214, 214, 214);
