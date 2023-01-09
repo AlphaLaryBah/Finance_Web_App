@@ -156,7 +156,7 @@ export default function FetchStock() {
 		<div className="container">
 			<div className="row">
 				<div className=" fetchStocks col-sm-12 m-2">
-					<div className="containerOfSeacrhInput ">
+					<div className="containerOfSeacrhInput  ">
 						<div>
 							<form onSubmit={inPutSubmit}>
 								<input

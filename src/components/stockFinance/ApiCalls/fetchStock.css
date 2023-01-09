@@ -198,7 +198,7 @@ border-radius: 10px;
  padding: 10px;   
 } */
 /* Tablets */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
 	.container {
 		height: 100%;
 		margin-left: -1px;
@@ -269,12 +269,13 @@ border-radius: 10px;
 		border: 2px solid rgb(214, 214, 214);
 		border-radius: 0px 0px 10px 10px;
 	}
-}
+} */
 /* Phone */
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
 	.container {
 		height: 100%;
 		margin-left: 10px;
+		background:none;
 	}
 
 	.stockNameInput {
@@ -316,7 +317,6 @@ border-radius: 10px;
 		margin-left: 27%;
 		margin-right: 50%;
 		position: relative;
-		/* left: -8.01%; */
 		background-color: white;
 		height: 390px;
 		margin-top: -1px;
@@ -334,6 +334,134 @@ border-radius: 10px;
 		height: 390px;
 		margin-top: -1px;
 		width: 300px;
+		max-height: 400px;
+		overflow: scroll;
+		border: 2px solid rgb(214, 214, 214);
+		border-radius: 0px 0px 10px 10px;
+	}
+} */
+@media (max-width: 1024px) {
+	.container {
+		height: 100%;
+		margin-left: -50px;
+		background: none;
+	}
+
+	.stockNameInput {
+		margin-left: 25%;
+		margin-right: 50%;
+		padding: 15px;
+		width: 300px;
+		border: none;
+		border-radius: 20px;
+		box-shadow: -1px 4px 1px 0px rgba(81, 81, 81, 0.48);
+		-webkit-box-shadow: -1px 4px 1px 0px rgba(118, 118, 118, 0.48);
+		-moz-box-shadow: -1px 1px 1px 0px rgba(102, 102, 102, 0.48);
+	}
+
+	.stockNameInputOnChange {
+		padding: 15px;
+		margin-right: auto;
+		margin-left: 25%;
+		width: 300px;
+		border: none;
+		border-radius: 20px 20px 0px 0px;
+		border-top: 1px solid rgb(184, 182, 182);
+		border-left: 1px solid rgb(184, 182, 182);
+		border-right: 1px solid rgb(184, 182, 182);
+	}
+
+	.searchIcon {
+		position: absolute;
+		left: clamp(92%, 90%, 100%);
+		top: 3%;
+		padding: 5px;
+		border-radius: 50%;
+		margin: 1px 0px 1px 0px;
+		border: none;
+		color: white;
+		background-color: #e666ff;
+	}
+	.searchOption {
+		margin-left: 27%;
+		margin-right: 50%;
+		position: relative;
+		background-color: white;
+		height: 390px;
+		margin-top: -1px;
+		width: 302px;
+		max-height: 400px;
+		overflow: scroll;
+		border: 2px solid rgb(214, 214, 214);
+		border-radius: 0px 0px 10px 10px;
+	}
+	.searchOptionInputChanged {
+		margin-left: 31.5%;
+		margin-right: 50%;
+		position: relative;
+		background-color: white;
+		height: 390px;
+		margin-top: -1px;
+		width: 300px;
+		max-height: 400px;
+		overflow: scroll;
+		border: 2px solid rgb(214, 214, 214);
+		border-radius: 0px 0px 10px 10px;
+	}
+}
+@media (min-width: 540px) and (max-width: 1024px) {
+	.container {
+		height: 100%;
+		margin-left: -130px;
+		background: none;
+	}
+
+	.stockNameInput {
+		margin-left: 25%;
+		margin-right: 50%;
+		padding: 15px;
+		width: 500px;
+	}
+
+	.stockNameInputOnChange {
+		padding: 15px;
+		margin-right: auto;
+		margin-left: 25%;
+		width: 500px;
+	}
+
+	.searchIcon {
+		position: absolute;
+		left: clamp(98%, 90%, 100%);
+		top: 3%;
+		padding: 5px;
+		border-radius: 50%;
+		margin: 1px 0px 1px 0px;
+		border: none;
+		color: white;
+		background-color: #e666ff;
+	}
+	.searchOption {
+		margin-left: 27%;
+		margin-right: 50%;
+		position: relative;
+		background-color: white;
+		height: 390px;
+		margin-top: -1px;
+		width: 500px;
+		max-height: 400px;
+		overflow: scroll;
+		border: 2px solid rgb(214, 214, 214);
+		border-radius: 0px 0px 10px 10px;
+	}
+	.searchOptionInputChanged {
+		margin-left: 30.9%;
+		margin-right: 50%;
+		position: relative;
+		background-color: white;
+		height: 390px;
+		margin-top: -1px;
+		width: 500px;
 		max-height: 400px;
 		overflow: scroll;
 		border: 2px solid rgb(214, 214, 214);
