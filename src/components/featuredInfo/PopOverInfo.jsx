@@ -20,7 +20,7 @@ import TableRow from "@mui/material/TableRow";
 
 export default function PopOverInfo(props) {
 	return (
-		<TableContainer component={Paper}>
+		<TableContainer component={Paper} className=" ">
 			<Table sx={{ width: 300 }} aria-label="spanning table">
 				<TableHead>
 					<TableRow>
@@ -185,7 +185,7 @@ export default function PopOverInfo(props) {
 							</TableCell>
 						</TableRow>
 					) : null}
-					<TableRow>
+					<TableRow className="total">
 						<TableCell colSpan={3}>
 							<AccountBalanceIcon color="success" /> Total
 						</TableCell>

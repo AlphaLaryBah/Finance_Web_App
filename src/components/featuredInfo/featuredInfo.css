@@ -84,6 +84,7 @@
 #popover {
 	max-width: 100%;
 }
+
 @media (max-width: 1024px) {
 	.featured {
 		width: 100%;
@@ -99,5 +100,27 @@
 		width: 100%;
 		min-width: 40%;
 		max-width: 100%;
+	}
+	#popover {
+	width: 320px;
+	/* margin-left: -10px; */
+}
+}
+/* For Mobile Devices  */
+@media (min-width: 300px ) and (max-width: 480px) {
+	.featured {
+		width: 140%;
+		/* min-width: 120%; */
+		margin-left: -40px;
+		/* margin-right: 140%; */
+		display: block;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.featuredItem {
+		width: 100%;
+		
 	}
 }

@@ -26,10 +26,7 @@ export default function FeaturedInfo(props) {
 	// };
 
 	const popover = (
-		<Popover
-			id="popover"
-			className="border border-info shadow  bg-white rounded"
-		>
+		<Popover id="popover" className="shadow-lg p-2 mb-5 bg-white rounded border-0">
 			<Popover.Header
 				as="h3"
 				className="text-success text-center text-uppercase bg-white "
