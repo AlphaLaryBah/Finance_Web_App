@@ -111,7 +111,7 @@
 	.featured {
 		width: 140%;
 		/* min-width: 120%; */
-		margin-left: -40px;
+		margin-left: -42px;
 		/* margin-right: 140%; */
 		display: block;
 		flex-direction: column;
