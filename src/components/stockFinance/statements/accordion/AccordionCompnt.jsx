@@ -11,7 +11,7 @@ import React from "react";
 export default function AccordionCompnt({ incomeData, getOverViewData }) {
 	return (
 		<div className="accordionContainer overflow-scroll">
-			<Accordion className="bg-light" defaultActiveKey="0">
+			<Accordion className="bg-light accordion" defaultActiveKey="0">
 				<Accordion.Item eventKey="0">
 					<Accordion.Header>
 						<span className="text-success">Income Statement</span>

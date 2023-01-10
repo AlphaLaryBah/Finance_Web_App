@@ -17,19 +17,32 @@
 .accordion-button:not(.collapsed) {
 	color: #212529;
 }
+
 @media (max-width: 1024px) {
 	.accordionContainer {
 		margin-top: 15px;
 		margin-left: -50px;
 
-		width: 113%;
+		width: 120%;
+	}
+	.accordion {
+		width: 80%;
+	}
+}
+/* For Mobile Devices  */
+@media (min-width: 300px) and (max-width: 480px) {
+	.accordionContainer {
+		margin-top: 15px;
+	}
+	.accordion {
+		width: 76%;
 	}
 }
 @media (min-width: 540px) and (max-width: 1024px) {
 	.accordionContainer {
 		margin-top: 15px;
-		margin-left: -65px;
+		margin-left: -77px;
 
-		width: 232%;
+		width: 145%;
 	}
 }

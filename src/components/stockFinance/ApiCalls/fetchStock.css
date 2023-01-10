@@ -54,7 +54,7 @@
 	border-right: 1px solid rgb(184, 182, 182);
 }
 .containerOfSeacrhInput > button {
-	 background: none; 
+	background: none;
 	border: none;
 	display: flex;
 	justify-content: center;

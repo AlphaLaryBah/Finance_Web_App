@@ -16,7 +16,6 @@ export default function EpsCharts({
 	dailyQuoteData,
 	incomeData,
 }) {
-
 	let estimatedEPS = [];
 	let surprisePercentage = [];
 	let reportedEPS = [];
@@ -57,8 +56,6 @@ export default function EpsCharts({
 	if (!dailyQuoteData) {
 		return;
 	} else {
-		
-		
 		dailyQuote = {
 			price: dailyQuoteData["Global Quote"]["05. price"],
 			open: dailyQuoteData["Global Quote"]["02. open"],
@@ -85,10 +82,7 @@ export default function EpsCharts({
 	} else {
 		setWindowSize = false;
 	}
-	
-	
 
-	
 	return (
 		<div className="chartsContainer container ">
 			<div className="" style={{ gap: "10px", marginBottom: "0px" }}>
@@ -100,7 +94,6 @@ export default function EpsCharts({
 				<div className="chartOnLeft">
 					<div className="priceInfoContainer pl-3">
 						<div className="topRow">
-							
 							<h1>
 								{
 									<CurrencyFormat
