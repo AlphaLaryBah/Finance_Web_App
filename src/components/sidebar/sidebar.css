@@ -27,6 +27,7 @@
 .hideBar {
 	display: none;
 }
+
 .collapsed {
 	flex: -1;
 	height: calc(100vh -50px);
@@ -36,8 +37,7 @@
 }
 .sidebarWrapper {
 	padding: 20px;
-	/* color: #555; */
-	/* color: rgb(164, 164, 164); */
+
 	color: rgb(83, 82, 82);
 }
 .sidebarMenu {
@@ -61,7 +61,11 @@
 	align-items: center;
 	border-radius: 10px;
 }
-
+a:-webkit-any-link {
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+}
 .sidebarListItem.active,
 .sidebarListItem:hover {
 	background: rgba(233, 232, 232, 0.354);
